@@ -11,16 +11,16 @@
     <title>Dream Travel</title>
 </head>
 <body>
-    <header style="padding: 4rem 0; text-align:center; font-weight:10">
+    <header id="top" style="padding: 4rem 0; text-align:center; font-weight:10">
         <h1>Dream Travel</h1>
     </header>
     <nav>
         <ul>
             <li><a href="#">Úticélok</a></li>       <!--ctrl + Alt + lefele nyíl-->
-            <li><a href="#">Galéria</a></li>
+            <li><a href="#gallery">Galéria</a></li>
             <li><a href="#">Kapcsolat</a></li>
             <li><a href="#">Turizmus</a></li>
-            <li><a href="#">Rólunk</a></li>
+            <li><a href="./about_us.html">Rólunk</a></li>
         </ul>
     </nav>
     <main>
@@ -57,12 +57,33 @@
             <hr>
             <h2>Galéria</h2>
         </div>
-        <div class="gallery grid">
+        <div class="gallery grid" id="gallery">
             <figure><img class="piktúra" src="./img/galeria1.jpg" alt="tájkép" title="tájkép"></figure>
             <figure><img class="piktúra" src="./img/galeria2.jpg" alt="tájkép" title="tájkép"></figure>
             <figure><img class="piktúra" src="./img/galeria3.jpg" alt="tájkép" title="tájkép"></figure>
             <figure><img class="piktúra" src="./img/galeria4.jpg" alt="tájkép" title="tájkép"></figure>
         </div>
+        <table>
+            <tr>
+                <th>Cél</th>
+                <th>Indulási idő</th>
+                <th>Ár</th>
+            </tr>
+            <tr>
+                <td>Párizs</td>
+                <td>2026.05.05</td>
+                <td>70000 Ft</td>
+            </tr>
+            <tr>
+                <td>Roma</td>
+                <td>2026.06.08</td>
+                <td rowspan="2">100000 Ft</td>
+            </tr>
+            <tr>
+                <td>Velence</td>
+                <td>2026.04.09</td>
+            </tr>
+        </table>
         <div style="width: 90%; margin: 5rem auto 0 auto">
             <h2>Jelentkezés utazásra</h2>
         </div>
@@ -84,7 +105,7 @@
         </div>
     </main>
     <footer style="margin: 5rem;">
-
+        <a href="#top">Vissza a tetejére!</a>
     </footer>
 </body>
 </html>
